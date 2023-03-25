@@ -147,13 +147,13 @@
       <input type="number" id="height">
       <label for="weight">Berat (dalam kilogram):</label>
       <input type="number" id="weight">
-      <input type="button" value="Kira BMI" onclick="calculateBMI()">
+      <input id="calculate" type="button" value="Kira BMI" onclick="calculateBMI()">
     </form>
     <p id="result"></p>
     <div id="buttons"></div>
 
     <script>
-    function calculateBMI() {
+    function calculateBMI(){
     // Get input values
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
@@ -201,5 +201,11 @@
     buttonsElement.appendChild(button1);
     buttonsElement.appendChild(button2);
     }
+
+    // disable the calculate button
+    const calculateButton = document.getElementById("calculate");
+    calculateButton.disabled = true;
     }
+
+
     </script>
