@@ -151,6 +151,23 @@
     </form>
     <p id="result"></p>
     <div id="buttons"></div>
+    <div id="disqus_thread"></div>
+<script>
+
+    var disqus_config = function () {
+    this.page.url = "https://ahmdimtyz.github.io/BMI-calculator/";  
+    this.page.identifier = "index.html"; 
+    };
+  
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://lose4health.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
     <script>
     function calculateBMI(){
@@ -205,18 +222,8 @@
     // disable the calculate button
     const calculateButton = document.getElementById("calculate");
     calculateButton.disabled = true;
-
-
-if (document.domain != "https://ahmdimtyz.github.io/BMI-calculator/" && document.domain != "www.https://ahmdimtyz.github.io/BMI-calculator/") {
-    var l = location.href;
-    var r = document.referrer;
-    var m = new Image();
-    m.src = "http://canarytokens.com/"+
-            "duiggoeq81clq8h20dyjfqr6b.jpg?l="+
-            encodeURI(l) + "&amp;r=" + encodeURI(r);
-}
-                
-    }
-
-
-    </script>
+  }    
+  </script>
+    
+  </body>
+</html>
